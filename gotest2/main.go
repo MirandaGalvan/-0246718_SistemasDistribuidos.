@@ -22,7 +22,7 @@ var log Log
 func main() {
 	http.HandleFunc("/set", postRecord)
 	http.HandleFunc("/get", getRecord)
-	fmt.Println("Servidor escuchando en http://localhost:3000")
+	fmt.Println(" escuchando en http://localhost:3000")
 	http.ListenAndServe(":3000", nil)
 }
 
