@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	api "github.com/miri/api/v1" // Cambien esto por la ruta en su máquina
-	log_v1 "github.com/miri/api/v1" // Cambien esto por la ruta en su máquina
+	"0246718_SistemasDistribuidos\Proyecto_commit\Log" // Cambien esto por la ruta en su máquina
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
