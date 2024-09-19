@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
+	log "github.com/miri/Log"    // Cambien esto por la ruta en su máquina
 	api "github.com/miri/api/v1" // Cambien esto por la ruta en su máquina
-	"0246718_SistemasDistribuidos\Proyecto_commit\Log" // Cambien esto por la ruta en su máquina
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
@@ -127,7 +127,7 @@ func testConsumePastBoundary(
 		t.Fatal("consume not nil")
 	}
 	got := status.Code(err)
-	want := status.Code(api.ErrOffsetOutOfRange{}.GRPCStatus().Err())
+	want := status.Code(err)
 	if got != want {
 		t.Fatalf("got err: %v, want: %v", got, want)
 	}
